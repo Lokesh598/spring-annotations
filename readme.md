@@ -17,11 +17,25 @@
   - @SpringBootApplication
   - @EnableAutoConfiguration
 
-#### Stereotype annotation
+### Stereotype annotation
   1. @Component
   2. @Service
   3. @RestController/ @Controller
   4. @Repository
+
+### REST API related Annotations:
+  - @RestController
+  - @RequestMapping
+  - @GetMapping
+  - @PostMapping
+  - @PutMapping
+  - @DeleteMapping
+  - @RequestMapping
+  - @RequestBody
+  - @PathVariable
+  - @RequestParam
+  - @ControllerAdvice
+  - @ExceptionHandler
 
 ####
   @Component: this is the root annotation. Remaining three annotaions derived from @Component annotation.
@@ -102,4 +116,7 @@ When there are multiple beans of the same type, it's a good idea to use @Qualifi
 
 Please note that the value of the @Qualifier annotation matches with the name declared in the @Component annotation of our FooFormatter implementation.
   
-  
+##### @Primary
+we use @Primary to give higher preference to a bean when there are multiple beans of the same type.
+we need @Primary to register multiple beans with same name.
+
