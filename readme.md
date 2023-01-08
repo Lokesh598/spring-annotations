@@ -36,6 +36,10 @@
   - @RequestParam
   - @ControllerAdvice
   - @ExceptionHandler
+  
+### Spring Data JPA related annotations:
+  - @Entity
+  - 
 
 ####
   @Component: this is the root annotation. Remaining three annotaions derived from @Component annotation.
