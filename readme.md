@@ -103,6 +103,10 @@
   
   We use @Qualifier in Spring to autowire a specific bean among same type of beans, where as @Primary is used to give high preference to the specific bean among       multiple beans of same type to inject to a bean.
   
+  There's another annotation called @Primary that we can use to decide which bean to inject when ambiguity is present regarding dependency injection.
+
+  This annotation defines a preference when multiple beans of the same type are present. The bean associated with the @Primary annotation will be used unless       otherwise indicated.
+  
 ##### @Autowiring by @Qualifier
  Let's see how we can use @Qualifier annotation to indicate the required bean.
  First we difine two beans of type of formatter 
