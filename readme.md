@@ -40,6 +40,7 @@
   - @Bean
   - @Autowired
   - @Qualifier
+  - @Primary
   - @Lazy
   - @Value
   - @PropertySource
@@ -51,6 +52,10 @@
   we use @Bean inside a @Configuration class.
  
   @Autowired: Spring Autowire annotation used to automatic injection of beans.
+  if remove the @autowired annotation spring not able to create object of it and it will create NullPointerException. example in spring boot application we use it generally in controller class.
+  
   @Qualifier: Spring @Qualifier annotation is used in conjunction with Autowired to avoid confusion when we have two of more bean configured for same type.
+  
+  We use @Qualifier in Spring to autowire a specific bean among same type of beans, where as @Primary is used to give high preference to the specific bean among       multiple beans of same type to inject to a bean.
   
   
