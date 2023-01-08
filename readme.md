@@ -58,4 +58,48 @@
   
   We use @Qualifier in Spring to autowire a specific bean among same type of beans, where as @Primary is used to give high preference to the specific bean among       multiple beans of same type to inject to a bean.
   
+##### @Autowiring by @Qualifier
+ Let's see how we can use @Qualifier annotation to indicate the required bean.
+ First we difine two beans of type of formatter 
+      
+```java
+      @Component("fooFormatter")
+      public class FooFormatter implements Formatter {
+        public String format() {
+          return "foo";
+        }
+      }
+```
+
+```java
+@Component("barFormatter")
+public class BarFormatter implements Formatter {
+    public String format() {
+        return "bar";
+    }
+}
+```
+
+here we have two different classes which implemetning same interface. lets inject formatter in Forservice class.
+```java
+public class FooService {
+    @Autowired
+    private Formatter formatter;
+}
+```
+In our example, there are two concrete implementations of Formatter available for the Spring container. As a result, Spring will throw a NoUniqueBeanDefinitionException exception when constructing the FooService:
+...........
+We can avoid this by narrowing the implementation using a @Qualifier annotation:
+```java
+public class FooService {
+    @Autowired
+    @Qualifier("fooFormatter")
+    private Formatter formatter;
+}
+```
+
+When there are multiple beans of the same type, it's a good idea to use @Qualifier to avoid ambiguity.
+
+Please note that the value of the @Qualifier annotation matches with the name declared in the @Component annotation of our FooFormatter implementation.
+  
   
