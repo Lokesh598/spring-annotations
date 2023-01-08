@@ -1,5 +1,17 @@
-Spring Boot Annotations
+### Spring Annotation
 
+### Spring MVC Annotation
+  - @Controller
+  - @RequestMapping
+  - @PathVariable
+  - @RequestParam
+  - @ModelAttribute 
+  - @RequestBody and @ResponseBody
+  - @RequestHeader and @ResponseHeader
+    
+### Spring Boot Annotation
+  - @SpringBootApplication
+  - @EnableAutoConfiguration
 
 #### Stereotype annotation
   1. @Component
@@ -29,5 +41,11 @@ Spring Boot Annotations
   - @ConfigurationProperties
   - @Profile
   - @Scope
+  
+  
+  we use @Bean inside a @Configuration class.
+ 
+  @Autowired: Spring Autowire annotation used to automatic injection of beans.
+  @Qualifier: Spring @Qualifier annotation is used in conjunction with Autowired to avoid confusion when we have two of more bean configured for same type.
   
   
