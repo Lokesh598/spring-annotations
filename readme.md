@@ -39,7 +39,34 @@
   
 ### Spring Data JPA related annotations:
   - @Entity
-  - 
+  - @Table
+  - @Column
+  - @Transactional
+  #### Entity class relationships
+    - @OnetoOne
+    - @OnetoMany
+    - @ManytoOne
+    - @ManytoMany
+    
+### Security related annotations:
+  - @CrossOrigin
+  - @Secured
+  - @PreAuthorize
+  - @PermitAll
+
+### Caching related annotations:
+ - @EnableCaching
+ - @Cacheable
+ - @CachePut
+ - @CacheEvict
+
+### Aspect Oriented annotations:
+ - @Aspect
+ - @Pointcut
+ - @AfterRunning
+ - @AfterThrowing
+ - @Around
+ - @Before
 
 ####
   @Component: this is the root annotation. Remaining three annotaions derived from @Component annotation.
