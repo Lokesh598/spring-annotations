@@ -85,7 +85,7 @@
   - @Bean
   - @Autowired
   - @Qualifier
-  - @Primary
+  - [@Primary](https://www.baeldung.com/spring-qualifier-annotation#:~:text=%40Qualifier%20vs%20%40Primary,the%20same%20type%20are%20present.)
   - @Lazy
   - @Value
   - @PropertySource
