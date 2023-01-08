@@ -1,3 +1,7 @@
+## Annotations: 
+  Java 1.5 introduced annotations and now it’s heavily used in Java EE frameworks like Hibernate, Jersey, and Spring. 
+  Java Annotation is metadata about the program embedded in the program itself.
+
 ### Spring Annotation
 
 ### Spring MVC Annotation
@@ -18,7 +22,8 @@
   2. @Service
   3. @RestController/ @Controller
   4. @Repository
-  
+
+####
   @Component: this is the root annotation. Remaining three annotaions derived from @Component annotation.
   
   Now question is why we need Remaining three annotations if we can use @Component every where?
