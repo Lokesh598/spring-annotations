@@ -18,6 +18,7 @@
   - @EnableAutoConfiguration
   - @Configuration
   - @ComponentScan
+  
   Spring boot introduced @SpringBootApplication annotation. This single annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan.
 
 ### Stereotype annotation
